@@ -59,7 +59,7 @@ export default {
 <style scoped lang="scss">
 @import "@/assets/scss/_variables.scss";
 .nav-container {
-    background: $prime-color;
+    background: $first-light-color;
 }
 .nav-link span{
     font-family: 'Roboto';
@@ -67,7 +67,7 @@ export default {
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
-    color: $prime-text-color;
+    color: $first-dark-color;
 }
 .signup{
     background: #0E7DFF;
@@ -88,10 +88,11 @@ export default {
 .i:before {
     content: "ı";
     position: absolute;
-    color: $prime-text-color;
+    color: $first-dark-color;
 }
 .logo {
     font-weight: 600;
     font-size: 26px;
+    color: $first-dark-color;
 }
 </style>
