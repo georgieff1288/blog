@@ -13,7 +13,7 @@
             <div class="col-12 col-md-3 d-flex justify-content-center">
                 <ul>
                     <li>
-                        <p class="logo">On<span class="i asd">i</span>r</p>                
+                        <p class="logo text-center text-md-start">On<span class="i asd">i</span>r</p>                
                     </li>
                     <li class="medium-text">hello@onirapp.com</li>
                     <li class="medium-text">+1-800-123 4567</li>
@@ -40,6 +40,26 @@
                 </ul>
             </div>
             <div class="col-12 col-md-3 d-flex justify-content-center">
+                <ul>
+                    <li class="my-3 d-flex justify-content-center justify-content-md-start">
+                        <fa class="brand-icon fa-lg" :icon="['fab', 'facebook']"/>
+                        <fa class="brand-icon fa-lg mx-4" :icon="['fab', 'twitter']" />
+                        <fa class="brand-icon fa-lg" :icon="['fab', 'instagram']" />
+                    </li>
+                    <li class="medium-text text-center text-md-start" style="font-size: 15px; color:white;">Let's try out!</li>
+                    <li class="my-3">
+                        <div class="icon-div d-flex justify-content-center align-items-center">
+                            <fa class="icon fa-lg" :icon="['fab', 'app-store-ios']" />
+                            <span class="small-bold-text">&ensp; App Store</span>
+                        </div>
+                    </li>
+                    <li class="my-3">
+                        <div class="icon-div d-flex justify-content-center align-items-center">
+                            <fa class="fa-lg" :icon="['fab', 'google-play']" />
+                            <span class="small-bold-text">&ensp; Play Store</span>
+                        </div>
+                    </li>
+                </ul>   
             </div>
         </div>
     </div>
@@ -97,6 +117,8 @@ button{
 }
 ul{
     list-style-type: none;
+    margin: 0px;
+    padding: 0px;
 }
 .higher-line li{
     line-height: 44px;
@@ -105,4 +127,13 @@ ul{
     color: white;
     font-weight: 700px;    
 }
+.brand-icon{
+    color: white;
+}
+.icon-div{
+    background: white;
+    height: 57px;
+    width: 170px;
+    border-radius: 15px;
+} 
 </style>

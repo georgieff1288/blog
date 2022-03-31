@@ -46,4 +46,12 @@ body{
         font-size: 15px;
     }
 }
+.small-bold-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 28px;
+    color: $first-dark-color;
+}
 </style>
