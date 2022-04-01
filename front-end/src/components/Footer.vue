@@ -1,7 +1,30 @@
 <template>
-    <div class="footer-container container-fluid">
-        <h3 class="text-center large-text">Subscribe Newsletter</h3>
-        <p class="text-center medium-text">Suspendisse tincidunt sapien feliuentum</p>
+    <div class="footer-container container-fluid pb-5 position-relative">
+        <div class="d-flex justify-content-center position-absolute top-0 start-50 translate-middle">
+            <div class="row footer-pink-box p-1 p-md-5">
+                <div class="col-12 col-md-8 order-2 oreder-md-1">
+                    <p class="large-text">Lets try out Onir for Free</p>
+                    <p class="medium-text">Download our latest version and please don't forget to rate :)</p>
+                    <div class="d-flex flex-column flex-md-row align-items-center">
+                        <div class="icon-div d-flex justify-content-center align-items-center m-1" style="border: 1px solid">
+                            <fa class="icon fa-lg" :icon="['fab', 'app-store-ios']" />
+                            <span class="small-bold-text">&ensp; App Store</span>
+                        </div>
+                        <div class="icon-div d-flex justify-content-center align-items-center m-1" style="border: 1px solid">
+                            <fa class="fa-lg" :icon="['fab', 'google-play']" />
+                            <span class="small-bold-text">&ensp; Play Store</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 order-1 order-md-2 d-flex d-md-block justify-content-center">
+                    <div class="first-img-div px-1 py-3">
+                        <img src="@/assets/images/iPhone-2.png" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 class="text-center large-text footer-title">Subscribe Newsletter</h3>
+        <p class="text-center medium-text footer-text">Suspendisse tincidunt sapien feliuentum</p>
         <div class="d-flex justify-content-center">
             <div class="d-block d-md-flex justify-content-center">
                 <input class="form-control m-1 col-12" type="text" placeholder="Enter your email address">
@@ -15,28 +38,28 @@
                     <li>
                         <p class="logo text-center text-md-start">On<span class="i asd">i</span>r</p>                
                     </li>
-                    <li class="medium-text">hello@onirapp.com</li>
-                    <li class="medium-text">+1-800-123 4567</li>
+                    <li class="medium-text footer-text">hello@onirapp.com</li>
+                    <li class="medium-text footer-text">+1-800-123 4567</li>
                 </ul>
             </div>
             <div class="col-12 col-md-3 d-flex justify-content-center">
                 <ul class="higher-line">
-                    <li class="medium-text title d-none d-md-block text-start" style="line-height: 28px;">Company</li>
-                    <li class="medium-text text-center text-md-start">About</li>
-                    <li class="medium-text text-center text-md-start">Services</li>
-                    <li class="medium-text text-center text-md-start">Careers</li>
-                    <li class="medium-text text-center text-md-start">Blog</li>
-                    <li class="medium-text text-center text-md-start">Pricing</li>
+                    <li class="medium-text footer-text title d-none d-md-block text-start" style="line-height: 28px;">Company</li>
+                    <li class="medium-text footer-text text-center text-md-start">About</li>
+                    <li class="medium-text footer-text text-center text-md-start">Services</li>
+                    <li class="medium-text footer-text text-center text-md-start">Careers</li>
+                    <li class="medium-text footer-text text-center text-md-start">Blog</li>
+                    <li class="medium-text footer-text text-center text-md-start">Pricing</li>
                 </ul>
             </div>
             <div class="col-12 col-md-3 d-flex justify-content-center">
                 <ul class="higher-line">
-                    <li class="medium-text title d-none d-md-block text-start" style="line-height: 28px;">Contact</li>
-                    <li class="medium-text text-center text-md-start">Help</li>
-                    <li class="medium-text text-center text-md-start">FAQs</li>
-                    <li class="medium-text text-center text-md-start">Press</li>
-                    <li class="medium-text text-center text-md-start">Terms &#38; and Conditions</li>
-                    <li class="medium-text text-center text-md-start">Partners</li>
+                    <li class="medium-text footer-text title d-none d-md-block text-start" style="line-height: 28px;">Contact</li>
+                    <li class="medium-text footer-text text-center text-md-start">Help</li>
+                    <li class="medium-text footer-text text-center text-md-start">FAQs</li>
+                    <li class="medium-text footer-text text-center text-md-start">Press</li>
+                    <li class="medium-text footer-text text-center text-md-start">Terms &#38; and Conditions</li>
+                    <li class="medium-text footer-text text-center text-md-start">Partners</li>
                 </ul>
             </div>
             <div class="col-12 col-md-3 d-flex justify-content-center">
@@ -46,15 +69,15 @@
                         <fa class="brand-icon fa-lg mx-4" :icon="['fab', 'twitter']" />
                         <fa class="brand-icon fa-lg" :icon="['fab', 'instagram']" />
                     </li>
-                    <li class="medium-text text-center text-md-start" style="font-size: 15px; color:white;">Let's try out!</li>
+                    <li class="medium-text footer-text text-center text-md-start" style="font-size: 15px; color:white;">Let's try out!</li>
                     <li class="my-3">
-                        <div class="icon-div d-flex justify-content-center align-items-center">
+                        <div class="icon-div d-flex justify-content-center align-items-center" style=" background: white;">
                             <fa class="icon fa-lg" :icon="['fab', 'app-store-ios']" />
                             <span class="small-bold-text">&ensp; App Store</span>
                         </div>
                     </li>
                     <li class="my-3">
-                        <div class="icon-div d-flex justify-content-center align-items-center">
+                        <div class="icon-div d-flex justify-content-center align-items-center" style=" background: white;">
                             <fa class="fa-lg" :icon="['fab', 'google-play']" />
                             <span class="small-bold-text">&ensp; Play Store</span>
                         </div>
@@ -73,13 +96,27 @@ export default {};
 @import "@/assets/scss/_variables.scss";
 .footer-container {
     background: $first-dark-color;
-    padding-top: 443px;
-    padding-bottom: 235px;
+    padding-top: 300px;
+    @media (max-width: $breakpoint-medium) {
+        padding-top: 400px;
+    }
 }
-.large-text{
+.footer-pink-box{
+    background: $first-light-color;
+    border-radius: 25px;
+}
+.first-img-div{
+    margin-top: -100px;
+    border-radius: 46px;
+    border: 6px solid $first-dark-color;
+    background: white;
+    max-width: 240px;
+}
+
+.footer-title{
     color:white;
 }
-.medium-text{
+.footer-text{
     color: $third-light-color;
 }
 input{
@@ -130,8 +167,7 @@ ul{
 .brand-icon{
     color: white;
 }
-.icon-div{
-    background: white;
+.icon-div{   
     height: 57px;
     width: 170px;
     border-radius: 15px;

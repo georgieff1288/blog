@@ -30,7 +30,7 @@ body{
     font-size: 50px;
     line-height: 59px;
     color: $first-dark-color;
-    @media (max-width: $breakpoint-small) {
+    @media (max-width: $breakpoint-medium) {
         font-size: 35px;
         line-height: 41px;
     }
@@ -42,7 +42,7 @@ body{
     font-size: 20px;
     line-height: 28px;
     color: $second-dark-color;
-    @media (max-width: $breakpoint-small) {
+    @media (max-width: $breakpoint-medium) {
         font-size: 15px;
     }
 }

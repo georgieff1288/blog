@@ -1,9 +1,9 @@
 <template>
     <div class="nav-container container-fluid d-flex justify-content-between justify-content-lg-center">  
-        <div class="mt-2 mx-2">
+        <div class="mt-2 mx-0 mx-sm-2">
             <p class="logo">On<span class="i asd">i</span>r</p>
         </div>
-         <nav class="navbar navbar-expand-lg navbar-light mx-2" :class=" { 'navbarOpen': show }">
+         <nav class="navbar navbar-expand-lg navbar-light mx-0 mx-sm-2" :class=" { 'navbarOpen': show }">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" @click.stop="toggleNavbar()">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,8 +27,8 @@
                 <li class="nav-item">
                     <router-link class="nav-link mx-2" to="/"><span>About</span></router-link>
                 </li>
-                <li class="nav-item">
-                    <router-link class="nav-link mx-2" to="/"><span>Login</span></router-link>
+                <li class="nav-item mt-5 mt-lg-0">
+                    <router-link class="nav-link mx-2" to="/"><span class="login px-3 px-lg-0">Login</span></router-link>
                 </li>
                 <li class="nav-item">
                     <router-link class="nav-link mx-2" to="/">
@@ -78,7 +78,7 @@ export default {
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
-    width: 70px;
+    width: 80px;
     height: 22px;
 }
 .i {
@@ -94,5 +94,11 @@ export default {
     font-weight: 600;
     font-size: 26px;
     color: $first-dark-color;
+}
+.login{
+    @media (max-width: $breakpoint-large) {
+        border-radius: 500px;
+        border: 1px solid;
+    }
 }
 </style>
