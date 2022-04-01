@@ -105,4 +105,12 @@ body{
     line-height: 18px;
     color: $second-dark-color;
 }
+.x-small-bold-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    color: $first-dark-color;
+}
 </style>
