@@ -4,12 +4,22 @@ import router from './router'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-// import { fas } from '@fortawesome/free-solid-svg-icons'
+import { faHandPointUp, faThumbsUp, faFolderOpen, faSquareArrowUpRight } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faTwitter, faInstagram, faAppStoreIos, faGooglePlay } from '@fortawesome/free-brands-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 
-library.add(faFacebook, faTwitter,faInstagram, faAppStoreIos, faGooglePlay)
+library.add(
+    faFacebook, 
+    faTwitter, 
+    faInstagram, 
+    faAppStoreIos, 
+    faGooglePlay, 
+    faHandPointUp,
+    faThumbsUp,
+    faFolderOpen,
+    faSquareArrowUpRight,
+    )
 
 
 createApp(App)

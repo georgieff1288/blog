@@ -70,7 +70,7 @@ export default {
     color: $first-dark-color;
 }
 .signup{
-    background: #0E7DFF;
+    background: $blue-color;
     border-radius: 500px;
     color: white;
     font-family: 'Roboto';
@@ -82,7 +82,7 @@ export default {
     height: 22px;
 }
 .i {
-    color: #0e7dff;
+    color: $blue-color;
     position: relative;
 }
 .i:before {

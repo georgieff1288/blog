@@ -3,7 +3,7 @@
         <div class="d-flex justify-content-center position-absolute top-0 start-50 translate-middle">
             <div class="row footer-pink-box p-1 p-md-5">
                 <div class="col-12 col-md-8 order-2 oreder-md-1">
-                    <p class="large-text">Lets try out Onir for Free</p>
+                    <p class="x-large-text">Lets try out Onir for Free</p>
                     <p class="medium-text">Download our latest version and please don't forget to rate :)</p>
                     <div class="d-flex flex-column flex-md-row align-items-center">
                         <div class="icon-div d-flex justify-content-center align-items-center m-1" style="border: 1px solid">
@@ -23,7 +23,7 @@
                 </div>
             </div>
         </div>
-        <h3 class="text-center large-text footer-title">Subscribe Newsletter</h3>
+        <h3 class="text-center x-large-text footer-title">Subscribe Newsletter</h3>
         <p class="text-center medium-text footer-text">Suspendisse tincidunt sapien feliuentum</p>
         <div class="d-flex justify-content-center">
             <div class="d-block d-md-flex justify-content-center">

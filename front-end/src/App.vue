@@ -23,12 +23,36 @@ export default {
 body{
     margin: 0px;
 }
-.large-text{
+.xx-x-large-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 110px;
+    color: $first-dark-color;
+     @media (max-width: $breakpoint-medium) {
+        font-size: 50px;
+        line-height: 55px;
+    }
+}
+.x-large-text{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 50px;
     line-height: 59px;
+    color: $first-dark-color;
+    @media (max-width: $breakpoint-medium) {
+        font-size: 35px;
+        line-height: 41px;
+    }
+}
+.large-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
     color: $first-dark-color;
     @media (max-width: $breakpoint-medium) {
         font-size: 35px;
@@ -46,6 +70,17 @@ body{
         font-size: 15px;
     }
 }
+.medium-bold-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: $first-dark-color;
+    @media (max-width: $breakpoint-medium) {
+        font-size: 15px;
+    }
+}
 .small-bold-text{
     font-family: 'Roboto';
     font-style: normal;
@@ -53,5 +88,21 @@ body{
     font-size: 15px;
     line-height: 28px;
     color: $first-dark-color;
+}
+.small-bold-lighter-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 28px;
+    color: $second-dark-color;
+}
+.small-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: $second-dark-color;
 }
 </style>
