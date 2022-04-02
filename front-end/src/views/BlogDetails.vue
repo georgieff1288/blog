@@ -1,8 +1,8 @@
 <template>
     <div class="details-container container-fluid px-0">
-        <div class="details-header">
+        <div class="details-header d-flex flex-column align-items-center">
             <p class="text-center medium-bold-text"><span class="blue-color">Design</span> | 30 min ago</p>
-            <p class="text-center xx-large-text">Added Cool Features</p>
+            <p class="text-center xx-large-text" style="max-width: 1120px;">{{title}}</p>
             <p class="text-center medium-bold-text">By Robert Long</p>
         </div>
         <div class="container d-flex flex-column align-items-center" style="max-width: 1110px;">
@@ -125,7 +125,25 @@
 </template>
 
 <script>
-export default {};
+import axios from 'axios'
+export default {
+    data: function (){
+        return {
+            title:''
+        }
+    },
+    mounted(){
+        this.getTitle();
+    },
+    methods:{
+        async getTitle(){
+            await axios.get(`http://localhost:3000/blog/details/${this.$route.params.id}`)
+                .then(response => response.data)
+                .then(result => {this.title = result[0].title})
+                .catch(err => console.log(err))
+        }
+    }
+};
 </script>
 
 <style scoped lang="scss">

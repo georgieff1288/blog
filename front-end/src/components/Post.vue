@@ -5,7 +5,7 @@
             <p class="small-text">{{post.date}}</p>
             <p class="medium-bold-text">{{post.title}}</p>
             <p class="small-text">{{post.content}}</p>
-            <router-link class="router-link" to="/blog/details">
+            <router-link class="router-link" :to="'/blog/details/' + post.id">
                 <p class="read-story-btn small-text">Read Story</p>
             </router-link>
         </div>

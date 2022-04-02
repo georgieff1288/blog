@@ -17,7 +17,7 @@
                 <div class="col-12 col-lg-6">
                     <p class="x-large-text mt-3 m-lg-0">{{firstPost.title}}</p>
                     <p class="medium-text">{{firstPost.content}}</p>
-                    <router-link class="router-link" to="/blog/details">
+                    <router-link class="router-link" :to="'/blog/details/' + firstPost.id">
                         <p class="small-text read-story-btn m-1">Read story</p>
                     </router-link>
                     <div class="d-flex">
@@ -67,7 +67,8 @@ export default {
                     this.firstPost = result[0]
                     result.shift()
                     this.posts = result
-                    })
+                })
+                .catch(err => console.log(err))
         }
 
         //NB: If you don't have db, you can comment axios import row and previous function and uncomment and use next function
