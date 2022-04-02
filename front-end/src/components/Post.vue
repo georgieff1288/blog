@@ -6,7 +6,7 @@
             <p class="medium-bold-text">{{post.title}}</p>
             <p class="small-text">{{post.content}}</p>
             <router-link class="router-link" to="/blog/details">
-                <p class="read-btn small-text">Read Story</p>
+                <p class="read-story-btn small-text">Read Story</p>
             </router-link>
         </div>
     </div>
@@ -24,7 +24,7 @@ export default {
 .post-img{
     border-radius: 20px;
 }
-.read-btn{
+.read-story-btn{
     color: $blue-color;
     font-weight: 700px;
 }

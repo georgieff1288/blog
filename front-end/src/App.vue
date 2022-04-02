@@ -116,4 +116,14 @@ body{
     line-height: 12px;
     color: $first-dark-color;
 }
+.blue-color{
+    color: $blue-color;
+}
+.first-dark-color{
+    color: $first-dark-color;
+}
+.read-story-btn{
+    color: $blue-color;
+    font-weight: 700px;
+}
 </style>

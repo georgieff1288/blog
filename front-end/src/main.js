@@ -4,7 +4,7 @@ import router from './router'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faHandPointUp, faThumbsUp, faFolderOpen, faSquareArrowUpRight, faShieldCat, faGear, faTable, faArrowsDownToLine, faStar, faUserGroup, faCircleCheck } from '@fortawesome/free-solid-svg-icons'
+import { faHandPointUp, faThumbsUp, faFolderOpen, faSquareArrowUpRight, faShieldCat, faGear, faTable, faArrowsDownToLine, faStar, faUserGroup, faCircleCheck, faQuoteRight } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faTwitter, faInstagram, faAppStoreIos, faGooglePlay } from '@fortawesome/free-brands-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 
@@ -26,6 +26,7 @@ library.add(
     faStar,
     faUserGroup,
     faCircleCheck,
+    faQuoteRight,
     )
 
 
