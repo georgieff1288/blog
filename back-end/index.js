@@ -7,7 +7,7 @@ const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'vue_auth_task'
+    database: 'vuejs_blog_task'
 });
 
 db.connect(err => {
@@ -28,8 +28,14 @@ app.use(bodyParser.urlencoded({
 
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => {    
-    res.send('Home page')
+app.get('/blog', (req, res) => {    
+    let sql = 'SELECT * FROM posts ORDER BY id DESC';
+    let query = db.query(sql, (err, result) => {
+        if(err){
+            console.log(err);
+        }
+        res.send(result)
+    })
 });
 
 

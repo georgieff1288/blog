@@ -23,7 +23,10 @@ export default {
 body{
     margin: 0px;
 }
-.xx-x-large-text{
+.router-link{
+    text-decoration: none;
+}
+.xx-large-text{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;

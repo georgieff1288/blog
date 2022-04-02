@@ -1,7 +1,7 @@
 <template>
     <div class="home-container container-fluid m-0 px-0">
         <section class="header-section container-fluid d-flex flex-column align-items-center py-5">
-            <p class="text-center xx-x-large-text" style="max-width: 1120px;">Jump Start Your Business to Next Level.</p>
+            <p class="text-center xx-large-text" style="max-width: 1120px;">Jump Start Your Business to Next Level.</p>
             <p class="text-center medium-text" style="max-width: 754px;">Improving your small business's growth through Onir app. It also help to improve your0px customer service and make more money quickly.</p>
             <div class="d-flex flex-column flex-md-row align-items-center">
                 <div class="icon-div d-flex justify-content-center align-items-center m-1" style="border: 1px solid">

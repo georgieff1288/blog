@@ -10,28 +10,28 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent" :class="{ 'show': show }">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <router-link class="nav-link mx-2" to="/"><span class="asd">How It Works</span></router-link>
+                    <router-link class="nav-link mx-2" to="/"><span>How It Works</span></router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link class="nav-link mx-2" to="/"><span>Features</span></router-link>
+                    <router-link class="nav-link mx-2" to="/features"><span>Features</span></router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link class="nav-link mx-2" to="/"><span>Pricing</span></router-link>
+                    <router-link class="nav-link mx-2" to="/pricing"><span>Pricing</span></router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link class="nav-link mx-2" to="/"><span>Blog</span></router-link>
+                    <router-link class="nav-link mx-2" to="/blog"><span>Blog</span></router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link class="nav-link mx-2" to="/"><span>Contact</span></router-link>
+                    <router-link class="nav-link mx-2" to="/contact"><span>Contact</span></router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link class="nav-link mx-2" to="/"><span>About</span></router-link>
+                    <router-link class="nav-link mx-2" to="/about"><span>About</span></router-link>
                 </li>
                 <li class="nav-item mt-5 mt-lg-0">
-                    <router-link class="nav-link mx-2" to="/"><span class="login px-3 px-lg-0">Login</span></router-link>
+                    <router-link class="nav-link mx-2" to="/login"><span class="login px-3 px-lg-0">Login</span></router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link class="nav-link mx-2" to="/">
+                    <router-link class="nav-link mx-2" to="/signup">
                         <div class="signup mt-1 text-center">SignUp</div>
                     </router-link>
                 </li>
@@ -100,5 +100,8 @@ export default {
         border-radius: 500px;
         border: 1px solid;
     }
+}
+.active {
+    border-bottom: 2px solid $blue-color;
 }
 </style>
