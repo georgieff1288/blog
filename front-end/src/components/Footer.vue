@@ -1,16 +1,15 @@
 <template>
-    <div class="footer-container container-fluid pb-5 position-relative">
-        <div class="d-flex justify-content-center position-absolute top-0 start-50 translate-middle">
-            <div class="row footer-pink-box p-1 p-md-5">
+    <div class="footer-container container-fluid mx-0 pb-5 position-relative">
+            <div class="container mx-0 row footer-pink-box p-1 p-md-5 position-absolute top-0 start-50 translate-middle">
                 <div class="col-12 col-md-8 order-2 oreder-md-1">
-                    <p class="x-large-text">Lets try out Onir for Free</p>
-                    <p class="medium-text">Download our latest version and please don't forget to rate :)</p>
-                    <div class="d-flex flex-column flex-md-row align-items-center">
-                        <div class="icon-div d-flex justify-content-center align-items-center m-1" style="border: 1px solid">
+                    <p class="x-large-text" style="max-width: 398px;">Lets try out Onir for Free</p>
+                    <p class="medium-text" style="max-width: 398px;">Download our latest version and please don't forget to rate :)</p>
+                    <div class="d-flex flex-column flex-md-row align-items-center my-1 my-md-5">
+                        <div class="icon-div d-flex justify-content-center align-items-center m-1 me-md-3" style="border: 1px solid">
                             <fa class="icon fa-lg" :icon="['fab', 'app-store-ios']" />
                             <span class="small-bold-text">&ensp; App Store</span>
                         </div>
-                        <div class="icon-div d-flex justify-content-center align-items-center m-1" style="border: 1px solid">
+                        <div class="icon-div d-flex justify-content-center align-items-center m-1 ms-md-3" style="border: 1px solid">
                             <fa class="fa-lg" :icon="['fab', 'google-play']" />
                             <span class="small-bold-text">&ensp; Play Store</span>
                         </div>
@@ -22,17 +21,18 @@
                     </div>
                 </div>
             </div>
-        </div>
         <h3 class="text-center x-large-text footer-title">Subscribe Newsletter</h3>
         <p class="text-center medium-text footer-text">Suspendisse tincidunt sapien feliuentum</p>
         <div class="d-flex justify-content-center">
             <div class="d-block d-md-flex justify-content-center">
-                <input class="form-control m-1 col-12" type="text" placeholder="Enter your email address">
-                <button class="btn m-1 text-center col-12 col-md-6">Submit</button>
-            </div>
+                <input class="form-control mx-0 mx-md-2 my-1 col-12" type="text" placeholder="Enter your email address">
+                <button class="btn mx-0 mx-md-2 my-1 text-center col-12 col-md-6">Submit</button>
+            </div>            
+        </div>    
+        <div class="container my-5 d-none d-md-block">
+            <hr style="border-top: 2px solid rgba(255, 255, 255, 0.1);">    
         </div>
-        <hr>
-        <div class="row">
+        <div class="container-fluid mx-0 row">
             <div class="col-12 col-md-3 d-flex justify-content-center">
                 <ul>
                     <li>
@@ -168,8 +168,12 @@ ul{
     color: white;
 }
 .icon-div{   
-    height: 57px;
-    width: 170px;
+    height: 89px;
+    width: 270px;
     border-radius: 15px;
+    @media (max-width: $breakpoint-medium) {
+        height: 70px;
+        width: 230px;
+    }
 } 
 </style>

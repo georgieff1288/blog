@@ -1,6 +1,6 @@
 <template>
     <div class="home-container container-fluid m-0 px-0">
-        <section class="header-section container-fluid d-flex flex-column align-items-center py-5">
+        <section class="header-section container-fluid d-flex flex-column align-items-center m-0 py-5">
             <p class="text-center xx-large-text" style="max-width: 1120px;">Jump Start Your Business to Next Level.</p>
             <p class="text-center medium-text" style="max-width: 754px;">Improving your small business's growth through Onir app. It also help to improve your0px customer service and make more money quickly.</p>
             <div class="d-flex flex-column flex-md-row align-items-center">
@@ -17,11 +17,15 @@
         <!-- <section class="container-fluid m-0 px-0">
             <Carousel />
         </section> -->
-        <section class="d-flex flex-column align-items-center mt-5">
+        <section class="container d-flex flex-column align-items-center mt-5">
             <p class="text-center x-large-text">Trusted by</p>
             <p class="text-center medium-text" style="max-width:774px;">Onir has been featured on World most famous brands in Top 20 list. People are love our services most and get benefits from it.</p>
+            <div class="container-fluid logos px-0 d-flex">
+                <img src="@/assets/images/logos.png" class="img-fluid" alt="...">
+                <img src="@/assets/images/logos.png" class="d-block d-md-none img-fluid" alt="...">
+            </div>
         </section>
-        <section class="d-flex flex-column align-items-center my-5">
+        <section class="container d-flex flex-column align-items-center my-5">
             <p class="text-center x-large-text">How Onir Works</p>
             <p class="text-center medium-text" style="max-width:774px;">App works very smoothly with your requirements and its easy to install and register to you and your clients.</p>
         </section>
@@ -62,8 +66,10 @@
             <hr>
         </section>
         <section class="container pt-5">
-            <p class="text-center x-large-text">Few Awesome Features</p>
-            <p class="text-center medium-text">Improving your small business's growth through Onir app. It also help to improve your customer service and make more money quickly.</p>
+            <div class="d-flex flex-column align-items-center mb-5">
+                <p class="text-center x-large-text">Few Awesome Features</p>
+                <p class="text-center medium-text" style="max-width:754px;">Improving your small business's growth through Onir app. It also help to improve your customer service and make more money quickly.</p>
+            </div>
             <div class="row px-1 mx-0 px-md-5 mx-md-5">
                 <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start">
                     <div class="phone-div d-flex justify-content-center mb-2 py-3 px-1">
@@ -103,7 +109,7 @@
                 </div>
             </div>
         </section>
-        <section class="container my-5">
+        <section class="container px-0 my-5">
             <div class="pink-box px-5 pt-5" style="padding-bottom: 200px">
                 <p class="text-center small-bold-lighter-text">DOLOR SIT AMET</p>
                 <p class="text-center x-large-text">Why Choose Onir</p>
@@ -156,13 +162,13 @@
                     </div>
                 </div>
         </section>
-        <section class="container-fluid">
+        <section class="container-fluid m-0">
             <div class="d-flex flex-column align-items-center">
                 <p class="text-center x-large-text">People Loves Onir</p>
                 <p class="text-center medium-text" style="max-width: 806px;">We love our clients. Here are just a few of the amazing testimonials about our great results, personable services and knowledge.</p>
             </div>
         </section>
-        <section class="container-fluid pink-section pt-5">
+        <section class="container-fluid pink-section m-0 px-0 pt-5">
             <div class="d-flex flex-column align-items-center">
                 <p class="text-center x-large-text" style="max-width: 605px;">Simple, Transparent Plans. Let Start with Onir.</p>
                 <p class="text-center medium-text">Choose  a plan that works for you.</p>
@@ -175,8 +181,8 @@
                 <p class="small-bold-text mx-1">Yearly</p>
                 <div class="x-small-bold-text mx-1 discount text-center py-1 mt-1">10% Off</div>
             </div>
-            <div class="row mb-5">
-                <div class="col-4 d-none d-md-flex justify-content-end p-5">
+            <div class="row mb-5 mx-1">
+                <div class="col-4 d-none d-md-flex justify-content-center p-5">
                     <div class="price-div side d-flex flex-column justify-content-center align-items-center">
                         <p class="medium-bold-text">Base</p>
                         <p class="small-text" style="line-height: 28px;">For the basics</p>
@@ -206,7 +212,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-4 d-none d-md-flex justify-content-start p-5">
+                <div class="col-4 d-none d-md-flex justify-content-center p-5">
                     <div class="price-div side d-flex flex-column justify-content-center align-items-center">
                         <p class="medium-bold-text">Enterprise</p>
                         <p class="small-text" style="line-height: 28px;">For the professionals</p>
@@ -222,10 +228,10 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div class="container px-1 px-md-0">
                 <p class="text-center d-none d-md-block x-large-text">Frequently Asked Questions</p>
                 <p class="text-center d-block d-md-none x-large-text">FAQs</p>
-                <div class="container">
+                <div class="container px-0">
                     <div class="row">
                         <div class="col-12 col-md-6">
                             <p class="medium-bold-text">How can I pay?</p>
@@ -299,6 +305,24 @@ export default {
     width: 170px;
     border-radius: 15px;
 } 
+.logos img{
+    width: 100%;
+    min-width: 500px;
+    @media (max-width: $breakpoint-medium) {
+        animation: animate 10s linear infinite;
+    }  
+}
+@keyframes animate{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+.logos{
+    overflow: hidden;
+}
 .pink-box{
     background: $first-light-color;
     border-radius: 25px;

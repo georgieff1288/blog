@@ -1,5 +1,5 @@
 <template>
-    <div class="blog-container container-fluid px-0">
+    <div class="blog-container container-fluid m-0 px-0">
         <div class="blog-header d-flex flex-column align-items-center">
             <p class="text-center medium-text">Chckout our Latest Stories</p>
             <p class="text-center xx-large-text">Blog</p>
@@ -9,15 +9,15 @@
             </div>
         </div>
         <h1 v-if="!firstPost" class="text-center x-large-text mt-4">Loading...</h1>
-        <div class="post-container container">
-            <div class="row mx-0 mx-md-5 mb-5" style="margin-top: -60px;">
+        <div class="post-container container-fluid m-0 px-0 px-md-3">
+            <div class="row mx-0 px-3 mx-md-5 mb-5" style="margin-top: -60px;">
                 <div class="col-12 col-lg-6">
                     <img :src="firstPost.image_url" class="first-post-img img-fluid" alt="...">
                 </div>
                 <div class="col-12 col-lg-6">
                     <p class="x-large-text mt-3 m-lg-0">{{firstPost.title}}</p>
                     <p class="medium-text">{{firstPost.content}}</p>
-                    <router-link class="router-link" :to="'/blog/details/' + firstPost.id">
+                    <router-link class="router-link" :to="'/blog/post-details/' + firstPost.id">
                         <p class="small-text read-story-btn m-1">Read story</p>
                     </router-link>
                     <div class="d-flex">
@@ -29,7 +29,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row mx-0 mx-md-5">
+            <div class="row mx-0 px-3 mx-md-5">
                 <div class="col-12 col-md-4" v-for="post in posts" :key="post.id">
                     <Post :post="post" />  
                 </div>

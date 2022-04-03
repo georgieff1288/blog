@@ -1,11 +1,11 @@
 <template>
-    <div class="details-container container-fluid px-0">
+    <div class="details-container container-fluid m-0 px-0">
         <div class="details-header d-flex flex-column align-items-center">
             <p class="text-center medium-bold-text"><span class="blue-color">Design</span> | 30 min ago</p>
             <p class="text-center xx-large-text" style="max-width: 1120px;">{{title}}</p>
             <p class="text-center medium-bold-text">By Robert Long</p>
         </div>
-        <div class="container d-flex flex-column align-items-center" style="max-width: 1110px;">
+        <div class="container px-2 px-md-0 d-flex flex-column align-items-center">
             <img src="@/assets/images/post-image-1.png" class="post-img img-fluid" alt="..." style="margin-top: -60px;">
             <p class="medium-text my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit, justo cursus semper varius, mi est elementum mauris, sed posuere neque mi non purus. Curabitur cursus felis a vulputate condimentum. Curabitur blandit justo odio, vitae pulvinar massa tristique efficitur. Pellentesque laoreet magna metus. Morbi metus justo, fermentum mollis volutpat sollicitudin, blandit a ligula. Vivamus interdum massa felis. Proin pulvinar elementum ligula. Morbi nec orci gravida, varius ipsum quis, lacinia nunc. Etiam vitae nunc ullamcorper, tristique dui quis, dictum lorem. Nulla dapibus diam lacus, in tincidunt tellus sagittis vel. Morbi dictum porttitor leo.
                 <br/>
@@ -34,7 +34,7 @@
             <p class="medium-text first-dark-color mb-5">Tags: <span class="blue-color">design, app, tips</span></p>
             <p class="x-large-text text-center">Leave a Comments</p> 
             <p class="small-text text-center">Nullam tincidunt, purus sit amet viverra auctor, quamque incidunt, puincidunt, Vestibulum </p>
-            <div class="container form-container mb-5">
+            <div class="container px-0 form-container mb-5">
                 <textarea class="form-control my-4" placeholder="Comments" rows="6"></textarea>
                 <div class="row">
                     <div class="col-12 col-md-6 py-4">
@@ -53,7 +53,7 @@
                     </div>
                 </div>  
                 <div class="d-flex justify-content-center justify-content-md-start">
-                    <button class="btn px-5">Post Comment</button>
+                    <button class="btn px-0 px-md-5">Post Comment</button>
                 </div>
             </div> 
             <div class="row mt-5" style="max-width: 774px">
@@ -89,7 +89,7 @@
             <p class="x-large-text mt-5">Related Posts</p>
             <p class="medium-text">We would like to share with you knowledge, experiences and latest news</p>
             <div class="container mt-5 p-0 row">
-                <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start">
+                <div class="col-12 px-0 col-md-4 d-flex justify-content-center justify-content-md-start">
                     <div class="pink-post-box p-4 d-flex flex-column justify-content-between">
                         <p class="text-end small-text">30 min ago</p>
                         <div class="iner-div p-1">
@@ -99,7 +99,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 my-3 my-md-0 d-flex justify-content-center">
+                <div class="col-12 px-0 col-md-4 my-3 my-md-0 d-flex justify-content-center">
                     <div class="pink-post-box p-4 d-flex flex-column justify-content-between">
                         <p class="text-end small-text">1 hr ago</p>
                         <div class="iner-div p-1">
@@ -109,7 +109,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end">
+                <div class="col-12 px-0 col-md-4 d-flex justify-content-center justify-content-md-end">
                     <div class="pink-post-box p-4 d-flex flex-column justify-content-between">
                         <p class="text-end small-text">4 hrs ago</p>
                         <div class="iner-div p-1">
@@ -137,7 +137,7 @@ export default {
     },
     methods:{
         async getTitle(){
-            await axios.get(`http://localhost:3000/blog/details/${this.$route.params.id}`)
+            await axios.get(`http://localhost:3000/blog/post-details/${this.$route.params.id}`)
                 .then(response => response.data)
                 .then(result => {this.title = result[0].title})
                 .catch(err => console.log(err))
@@ -197,6 +197,7 @@ export default {
     @media (max-width: $breakpoint-medium) {
         font-size: 20px;
         line-height: 28px;
+        width: 100%;
     }
     color: white;
     border-radius: 20px;

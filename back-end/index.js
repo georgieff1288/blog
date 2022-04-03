@@ -38,7 +38,7 @@ app.get('/blog', (req, res) => {
     })
 });
 
-app.get('/blog/details/:id', (req, res) => { 
+app.get('/blog/post-details/:id', (req, res) => { 
     let data = req.params.id;   
     let sql = 'SELECT * FROM posts_content WHERE post_id = ?';
     let query = db.query(sql, data, (err, result) => {
