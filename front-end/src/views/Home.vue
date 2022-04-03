@@ -296,7 +296,6 @@ export default {
 };
 </script>
 <style scoped lang="scss">
-@import "@/assets/scss/_variables.scss";
 .header-section{
     background: $first-light-color;
 }

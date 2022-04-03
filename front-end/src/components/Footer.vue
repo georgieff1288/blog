@@ -93,7 +93,6 @@ export default {};
 </script>
 
 <style scoped lang="scss">
-@import "@/assets/scss/_variables.scss";
 .footer-container {
     background: $first-dark-color;
     padding-top: 300px;

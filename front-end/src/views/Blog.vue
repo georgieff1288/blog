@@ -3,13 +3,13 @@
         <div class="blog-header d-flex flex-column align-items-center">
             <p class="text-center medium-text">Chckout our Latest Stories</p>
             <p class="text-center xx-large-text">Blog</p>
-            <div class="input-group mt-3 px-2">
-                <input type="text" class="form-control" placeholder="Search" aria-describedby="basic-addon2">
-                <span class="input-group-text" id="basic-addon2">Go</span>
+            <div class="container input-div d-flex justify-content-center mt-3 px-2">
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="medium-bold-text align-self-center d-none d-md-flex justify-content-center align-items-center" style="color: white;">Go</span>
             </div>
         </div>
         <h1 v-if="!firstPost" class="text-center x-large-text mt-4">Loading...</h1>
-        <div class="post-container container-fluid m-0 px-0 px-md-3">
+        <div v-if="firstPost" class="post-container container-fluid m-0 px-0 px-md-3">
             <div class="row mx-0 px-3 mx-md-5 mb-5" style="margin-top: -60px;">
                 <div class="col-12 col-lg-6">
                     <img :src="firstPost.image_url" class="first-post-img img-fluid" alt="...">
@@ -35,7 +35,7 @@
                 </div>
             </div>
         </div>
-        <div class="d-flex justify-content-center mx-1">
+        <div v-if="firstPost" class="d-flex justify-content-center mx-1">
             <div class="prev-posts d-flex justify-content-center align-items-center">
                 <p class="medium-bold-text">Previous Posts</p>
             </div>
@@ -96,12 +96,20 @@ export default {
 .blog-header p{
     color: $first-dark-color;
 }
-.input-group{
-    max-width: 648px;   
+.input-div input{
+    max-width: 648px;
+    height: 89px;
+    background: $third-light-color;
+    border-radius: 20px;
+    border-style: none;
 }
-.input-group span{
+.input-div span{
+    width: 97px;
+    height: 58px;
     background: $blue-color;
     color: white;
+    border-radius: 20px;
+    margin-left: -118px;
 }
 .profile-img{
     height: 50px;
