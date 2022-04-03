@@ -77,9 +77,9 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-start">
-                    <p class="small-bold-lighter-text">DOLOR SIT AMET</p>
-                    <p class="large-text">Make your Life Easy 	&#38; Smooth with Onir</p>
-                    <p class="medium-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et lectus quam. In hac habitasse platea dictumst. Curabitur sit amet neque tincidunt purus eleifend consequat vel ut nib.</p>
+                    <p class="small-bold-lighter-text text-center text-md-start">DOLOR SIT AMET</p>
+                    <p class="large-text text-center text-md-start">Make your Life Easy 	&#38; Smooth with Onir</p>
+                    <p class="medium-text text-center text-md-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et lectus quam. In hac habitasse platea dictumst. Curabitur sit amet neque tincidunt purus eleifend consequat vel ut nib.</p>
                     <ul style="list-style-type: circle;">
                         <li class="medium-bold-text">Integer libero felis</li>
                         <li class="medium-bold-text">Duis egestas scelerisque porttitor</li>
@@ -90,9 +90,9 @@
             </div>
             <div class="row px-1 mx-0 px-md-5 mx-md-5">
                 <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-start">
-                    <p class="small-bold-lighter-text">DOLOR SIT AMET</p>
-                    <p class="large-text">Boost Your Productivity</p>
-                    <p class="medium-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et lectus quam. In hac habitasse platea dictumst. Curabitur sit amet neque tincidunt purus eleifend consequat vel ut nib.</p>
+                    <p class="small-bold-lighter-text text-center text-md-start">DOLOR SIT AMET</p>
+                    <p class="large-text text-center text-md-start">Boost Your Productivity</p>
+                    <p class="medium-text text-center text-md-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et lectus quam. In hac habitasse platea dictumst. Curabitur sit amet neque tincidunt purus eleifend consequat vel ut nib.</p>
                     <div class="icon-div d-flex justify-content-center align-items-center mt-3" style="border: 1px solid">
                         <fa class="icon fa-lg" :icon="['fab', 'app-store-ios']" />
                         <span class="small-bold-text">&ensp; App Store</span>
@@ -181,7 +181,7 @@
                 <p class="small-bold-text mx-1">Yearly</p>
                 <div class="x-small-bold-text mx-1 discount text-center py-1 mt-1">10% Off</div>
             </div>
-            <div class="row mb-5 mx-1">
+            <div class="row mb-5 mx-md-5 px-md-2">
                 <div class="col-4 d-none d-md-flex justify-content-center p-5">
                     <div class="price-div side d-flex flex-column justify-content-center align-items-center">
                         <p class="medium-bold-text">Base</p>
@@ -296,6 +296,9 @@ export default {
 };
 </script>
 <style scoped lang="scss">
+.home-container{
+    overflow: hidden;
+}
 .header-section{
     background: $first-light-color;
 }

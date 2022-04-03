@@ -12,6 +12,7 @@ export default {
 
 <style scoped lang="scss">
 .container{
+    overflow: hidden;
     padding: 50px;
     height: 400px;
     @media (max-width: $breakpoint-medium) {

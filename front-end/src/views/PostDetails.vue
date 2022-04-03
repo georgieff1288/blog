@@ -148,6 +148,7 @@ export default {
 
 <style scoped lang="scss">
 .details-container {
+    overflow: hidden;
     padding-bottom: 300px;
     @media (max-width: $breakpoint-medium) {
         padding-bottom: 500px;

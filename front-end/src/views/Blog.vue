@@ -9,7 +9,7 @@
             </div>
         </div>
         <h1 v-if="!firstPost" class="text-center x-large-text mt-4">Loading...</h1>
-        <div v-if="firstPost" class="post-container container-fluid m-0 px-0 px-md-3">
+        <div v-if="firstPost" class="post-container container-fluid m-0 px-0 px-md-4">
             <div class="row mx-0 px-3 mx-md-5 mb-5" style="margin-top: -60px;">
                 <div class="col-12 col-lg-6">
                     <img :src="firstPost.image_url" class="first-post-img img-fluid" alt="...">
@@ -83,6 +83,7 @@ export default {
 
 <style scoped lang="scss">
 .blog-container{    
+    overflow: hidden;
     padding-bottom: 300px;
     @media (max-width: $breakpoint-medium) {
         padding-bottom: 500px;

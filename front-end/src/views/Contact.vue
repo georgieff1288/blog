@@ -67,7 +67,7 @@
                 </div>
             </div>
         </div>
-        <div class="container mb-5">            
+        <div class="container px-0 mb-5">            
             <div class="row img-row">                                     
                 <div class="col-12 col-md-4 d-flex flex-column justify-content-md-between mb-3 mb-md-0">   
                     <div>
@@ -101,6 +101,7 @@ export default {
 
 <style scoped lang="scss">
 .contact-container{
+    overflow: hidden;
     padding-bottom: 300px;
     @media (max-width: $breakpoint-medium) {
         padding-bottom: 500px;
@@ -162,7 +163,7 @@ export default {
 }
 .map{
     width: 100%;
-    height: 600px;
+    height: 600px;    
     @media (max-width: $breakpoint-medium) {
         height: 300px;
     }
