@@ -1,6 +1,6 @@
 <template>
     <div class="home-container container-fluid m-0 px-0">
-        <section class="header-section container-fluid d-flex flex-column align-items-center m-0 py-5">
+        <section class="header-section container-fluid d-flex flex-column align-items-center pt-5">
             <p class="text-center xx-large-text" style="max-width: 1120px;">Jump Start Your Business to Next Level.</p>
             <p class="text-center medium-text" style="max-width: 754px;">Improving your small business's growth through Onir app. It also help to improve your0px customer service and make more money quickly.</p>
             <div class="d-flex flex-column flex-md-row align-items-center">
@@ -14,9 +14,31 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="container-fluid m-0 px-0">
-            <Carousel />
-        </section> -->
+        <section class="container-fluid m-0 px-0 position-relative" style="padding-bottom: 300px;">
+            <div class="d-flex justify-content-center justify-content-md-between px-0 position-absolute top-0 start-50 translate-middle" style="max-height: 400px; width: 100%;">
+                <div class="px-2 d-none d-md-block">
+                    <img src="@/assets/images/phone-2.png" class="moving-img py-2 px-1 img-fluid" alt="...">
+                </div>
+                <div class="px-2 d-none d-md-block">
+                    <img src="@/assets/images/phone-3.png" class="moving-img py-2 px-1 img-fluid" alt="...">
+                </div>
+                <div class="px-2 d-none d-md-block">
+                    <img src="@/assets/images/phone-4.png" class="moving-img py-2 px-1 img-fluid" alt="...">
+                </div>
+                <div class="px-2 d-block">
+                    <img src="@/assets/images/phone-1.png" class="static-img py-3 px-1 img-fluid" alt="..."> 
+                </div>
+                <div class="px-2 d-none d-md-block">
+                    <img src="@/assets/images/phone-5.png" class="moving-img py-2 px-1 img-fluid" alt="...">  
+                </div>              
+                <div class="px-2 d-none d-md-block">
+                    <img src="@/assets/images/phone-6.png" class="moving-img py-2 px-1 img-fluid" alt="..."> 
+                </div>               
+                <div class="px-2 d-none d-md-block">
+                    <img src="@/assets/images/phone-7.png" class="moving-img py-2 px-1 img-fluid" alt="...">
+                </div>
+            </div>
+        </section>
         <section class="container d-flex flex-column align-items-center mt-5">
             <p class="text-center x-large-text">Trusted by</p>
             <p class="text-center medium-text" style="max-width:774px;">Onir has been featured on World most famous brands in Top 20 list. People are love our services most and get benefits from it.</p>
@@ -162,10 +184,28 @@
                     </div>
                 </div>
         </section>
-        <section class="container-fluid m-0">
-            <div class="d-flex flex-column align-items-center">
+        <section class="container-fluid pb-5 m-0">
+            <div class="d-flex flex-column align-items-center pb-5 pb-sm-0">
                 <p class="text-center x-large-text">People Loves Onir</p>
                 <p class="text-center medium-text" style="max-width: 806px;">We love our clients. Here are just a few of the amazing testimonials about our great results, personable services and knowledge.</p>
+            </div>
+            <div class="d-flex justify-content-center align-items-center my-5">
+                <div class="circle d-flex justify-content-center align-items-center">
+                    <div class="inner-circle d-flex justify-content-center align-items-center">
+                        <img src="@/assets/images/person-2.png" class="d-none d-md-block dot-1 img-fluid" alt="...">
+                        <img src="@/assets/images/person-3.png" class="d-none d-md-block dot-2 img-fluid" alt="...">
+                        <img src="@/assets/images/person-4.png" class="d-none d-md-block dot-3 img-fluid" alt="...">
+                        <img src="@/assets/images/person-5.png" class="d-none d-md-block dot-4 img-fluid" alt="...">
+                        <img src="@/assets/images/person-6.png" class="d-none d-md-block dot-5 img-fluid" alt="...">
+                        <img src="@/assets/images/person-7.png" class="d-none d-md-block dot-6 img-fluid" alt="...">
+                        <div class="center-div d-flex flex-column justify-content-center align-items-center">
+                            <img src="@/assets/images/person-1.png" class="img-fluid" alt="..." style="border-radius: 50%;">
+                            <p class="text-center medium-text">“Onir is an awesome app I have ever used. It helps me to work so easy and productive. UI Design is so stunning recommanded.”</p>
+                            <p class="text-center medium-bold-text">Natasha</p>
+                            <p class="text-center small-bold-text">Creative Designer</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="container-fluid pink-section m-0 px-0 pt-5">
@@ -288,11 +328,7 @@
 </template>
 
 <script>
-// import Carousel from "../components/Carousel.vue"
 export default {
-    components:{
-        // Carousel
-    }
 };
 </script>
 <style scoped lang="scss">
@@ -301,12 +337,26 @@ export default {
 }
 .header-section{
     background: $first-light-color;
+    padding-bottom: 360px;
 }
 .icon-div{   
     height: 57px;
     width: 170px;
     border-radius: 15px;
+    box-sizing: border-box;
 } 
+.moving-img{
+    border: 1px solid $second-dark-color;
+    border-radius: 22px;
+    background: white;
+}
+.static-img{
+    border: 6px solid $first-dark-color;
+    box-sizing: border-box;
+    border-radius: 46px;
+    background: white;
+    max-height: 520px;
+}
 .logos img{
     width: 100%;
     min-width: 500px;
@@ -363,6 +413,153 @@ export default {
     @media (max-width: $breakpoint-medium) {
         margin-top: 20px;
     }    
+}
+.circle{
+    height: 90vw;
+    width: 90vw;
+    border: 2px solid rgba(255, 240, 233, 0.8);
+    box-sizing: border-box;
+    border-radius: 50%;
+    @media (max-width: $breakpoint-medium) {
+        width: 100%;
+        border-style: none;
+    }  
+}
+.inner-circle{
+    height: 50vw;
+    width: 50vw;
+    background: rgba(255, 240, 233);
+    border-radius: 50%;
+    border: 2px solid rgba(255, 240, 233, 0.6);
+    box-sizing: border-box;
+    @media (max-width: $breakpoint-medium) {
+        width: 100%;
+        background: none;
+        border-style: none;
+    }  
+}
+.center-div{
+    z-index: 10;
+    width:280px;
+    height:280px;
+    background: rgba(255, 240, 233); 
+    border-radius: 50%;
+    @media (max-width: $breakpoint-medium) {
+        background: none;
+    }  
+}
+.dot-1{
+border-radius: 50%;
+animation: dot-1 12s linear infinite;
+position: absolute;
+}
+@keyframes dot-1{
+    0%{
+        transform:rotate(0deg)
+            translate(-25vw)
+            rotate(0deg);
+  
+  }
+    100%{
+        transform:rotate(360deg)
+            translate(-25vw)
+            rotate(-360deg);
+  }
+}
+.dot-2{
+border-radius: 50%;
+animation: dot-2 12s linear infinite;
+position: absolute;
+animation-delay: 4s;
+}
+@keyframes dot-2{
+    0%{
+        transform:rotate(0deg)
+            translate(-25vw)
+            rotate(0deg);
+  
+   }
+   100%{
+        transform:rotate(360deg)
+            translate(-25vw)
+            rotate(-360deg);
+   }
+}
+.dot-3{
+border-radius: 50%;
+animation: dot-3 12s linear infinite;
+position: absolute;
+animation-delay: 8s;
+}
+@keyframes dot-3{
+    0%{
+        transform:rotate(0deg)
+            translate(-25vw)
+            rotate(0deg);
+  
+    }
+    100%{
+        transform:rotate(360deg)
+            translate(-25vw)
+            rotate(-360deg);
+    }
+}
+.dot-4{
+border-radius: 50%;
+animation: dot-4 12s linear infinite;
+position: absolute;
+animation-delay: 2s;
+}
+@keyframes dot-4{
+    0%{
+        transform:rotate(0deg)
+            translate(-45vw)
+            rotate(0deg);
+  
+  }
+    100%{
+        transform:rotate(360deg)
+            translate(-45vw)
+            rotate(-360deg);
+  }
+}
+.dot-5{
+border-radius: 50%;
+animation: dot-5 12s linear infinite;
+position: absolute;
+animation-delay: 6s;
+}
+@keyframes dot-5{
+    0%{
+        transform:rotate(0deg)
+            translate(-45vw)
+            rotate(0deg);
+  
+   }
+   100%{
+        transform:rotate(360deg)
+            translate(-45vw)
+            rotate(-360deg);
+   }
+}
+.dot-6{
+border-radius: 50%;
+animation: dot-6 12s linear infinite;
+position: absolute;
+animation-delay: 10s;
+}
+@keyframes dot-6{
+    0%{
+        transform:rotate(0deg)
+            translate(-45vw)
+            rotate(0deg);
+  
+    }
+    100%{
+        transform:rotate(360deg)
+            translate(-45vw)
+            rotate(-360deg);
+    }
 }
 .pink-section{
     background: $fifth-light-color;

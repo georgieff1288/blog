@@ -58,6 +58,7 @@ export default {
 
 <style scoped lang="scss">
 .nav-container {
+    overflow-x: hidden;
     background: $first-light-color;
 }
 .nav-link span{

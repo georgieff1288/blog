@@ -162,6 +162,8 @@ export default {
     height: 85px;
 }
 .map{
+    border-radius: 20px;
+    overflow: hidden;
     width: 100%;
     height: 600px;    
     @media (max-width: $breakpoint-medium) {

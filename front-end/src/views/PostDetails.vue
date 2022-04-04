@@ -6,17 +6,17 @@
             <p class="text-center medium-bold-text">By Robert Long</p>
         </div>
         <div class="container px-2 px-md-0 d-flex flex-column align-items-center">
-            <img src="@/assets/images/post-image-1.png" class="post-img img-fluid" alt="..." style="margin-top: -60px;">
+            <img src="@/assets/images/post-image-1.png" class="post-img img-fluid" alt="..." style="margin-top: -60px;width: 100%;">
             <p class="medium-text my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit, justo cursus semper varius, mi est elementum mauris, sed posuere neque mi non purus. Curabitur cursus felis a vulputate condimentum. Curabitur blandit justo odio, vitae pulvinar massa tristique efficitur. Pellentesque laoreet magna metus. Morbi metus justo, fermentum mollis volutpat sollicitudin, blandit a ligula. Vivamus interdum massa felis. Proin pulvinar elementum ligula. Morbi nec orci gravida, varius ipsum quis, lacinia nunc. Etiam vitae nunc ullamcorper, tristique dui quis, dictum lorem. Nulla dapibus diam lacus, in tincidunt tellus sagittis vel. Morbi dictum porttitor leo.
                 <br/>
                 <br/>
             Nulla rutrum tellus eget odio facilisis mattis. Nullam egestas efficitur mi, fringilla bibendum sem ultricies et. Vestibulum interdum elit neque, in pretium velit ornare eu. Maecenas ultrices lorem quis urna ullamcorper, vel tempus mauris rutrum. In metus enim, fermentum eget ipsum vel, aliquam vulputate eros. Quisque non justo risus. Praesent eu aliquet urna.</p>
             <div class="row">
-                <div class="col-6">
-                    <img src="@/assets/images/post-image-2.png" class="post-img img-fluid" alt="...">
+                <div class="col-6 d-flex justify-content-start">
+                    <img src="@/assets/images/post-image-2.png" class="post-img img-fluid" alt="..." style="width: 100%;">
                 </div>
                 <div class="col-6">
-                    <img src="@/assets/images/post-image-3.png" class="post-img img-fluid" alt="...">
+                    <img src="@/assets/images/post-image-3.png" class="post-img img-fluid" alt="..." style="width: 100%;">
                 </div>
             </div>
             <p class="medium-text my-5">Nulla rutrum tellus eget odio facilisis mattis. Nullam egestas efficitur mi, fringilla bibendum sem ultricies et. Vestibulum interdum elit neque, in pretium velit ornare eu. Maecenas ultrices lorem quis urna ullamcorper, vel tempus mauris rutrum. In metus enim, fermentum eget ipsum vel, aliquam vulputate eros. Quisque non justo risus. Praesent eu aliquet urna.</p>
