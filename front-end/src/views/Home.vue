@@ -470,7 +470,7 @@ position: absolute;
 border-radius: 50%;
 animation: dot-2 12s linear infinite;
 position: absolute;
-animation-delay: 4s;
+animation-delay: -4s;
 }
 @keyframes dot-2{
     0%{
@@ -489,7 +489,7 @@ animation-delay: 4s;
 border-radius: 50%;
 animation: dot-3 12s linear infinite;
 position: absolute;
-animation-delay: 8s;
+animation-delay: -8s;
 }
 @keyframes dot-3{
     0%{
@@ -508,7 +508,7 @@ animation-delay: 8s;
 border-radius: 50%;
 animation: dot-4 12s linear infinite;
 position: absolute;
-animation-delay: 2s;
+animation-delay: -2s;
 }
 @keyframes dot-4{
     0%{
@@ -527,7 +527,7 @@ animation-delay: 2s;
 border-radius: 50%;
 animation: dot-5 12s linear infinite;
 position: absolute;
-animation-delay: 6s;
+animation-delay: -6s;
 }
 @keyframes dot-5{
     0%{
@@ -546,7 +546,7 @@ animation-delay: 6s;
 border-radius: 50%;
 animation: dot-6 12s linear infinite;
 position: absolute;
-animation-delay: 10s;
+animation-delay: -10s;
 }
 @keyframes dot-6{
     0%{
