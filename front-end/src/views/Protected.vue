@@ -1,7 +1,7 @@
 <template>
-    <div class="container d-flex justify-content-center">
-        <h1 class="text-center x-large-text">404 Page Not Found</h1>
-    </div>
+  <div class="container">
+      <p class="text-center x-large-text">Congratulations, you have reached protected view!</p>
+  </div>
 </template>
 
 <script>
@@ -12,7 +12,6 @@ export default {
 
 <style scoped lang="scss">
 .container{
-    overflow: hidden;
     padding-top: 100px;
     padding-bottom: 400px;
     @media (max-width: $breakpoint-medium) {

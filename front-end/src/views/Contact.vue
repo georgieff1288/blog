@@ -135,6 +135,10 @@ export default {
     },
     methods:{
         async send() {
+            if(!this.email || !this.name || !this.phone || !this.country || !this.message){
+                window.alert('Fields can not be empty')
+                return
+            }
             try{
                 await axios.post('http://localhost:3000/contact',
                     {name: this.name, message: this.message})
@@ -147,7 +151,7 @@ export default {
                             this.$router.push('/');  
                         }
                         else{
-                            window.alert('Message was not sent')
+                            window.alert(data)
                         }
                     })
             }

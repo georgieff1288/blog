@@ -456,14 +456,14 @@ position: absolute;
 @keyframes dot-1{
     0%{
         transform:rotate(0deg)
-            translate(-25vw)
-            rotate(0deg);
+        translate(-25vw)
+        rotate(0deg);
   
   }
     100%{
         transform:rotate(360deg)
-            translate(-25vw)
-            rotate(-360deg);
+        translate(-25vw)
+        rotate(-360deg);
   }
 }
 .dot-2{
@@ -475,14 +475,14 @@ animation-delay: -4s;
 @keyframes dot-2{
     0%{
         transform:rotate(0deg)
-            translate(-25vw)
-            rotate(0deg);
+        translate(-25vw)
+        rotate(0deg);
   
    }
    100%{
         transform:rotate(360deg)
-            translate(-25vw)
-            rotate(-360deg);
+        translate(-25vw)
+        rotate(-360deg);
    }
 }
 .dot-3{
@@ -494,14 +494,14 @@ animation-delay: -8s;
 @keyframes dot-3{
     0%{
         transform:rotate(0deg)
-            translate(-25vw)
-            rotate(0deg);
+        translate(-25vw)
+        rotate(0deg);
   
     }
     100%{
         transform:rotate(360deg)
-            translate(-25vw)
-            rotate(-360deg);
+        translate(-25vw)
+        rotate(-360deg);
     }
 }
 .dot-4{
@@ -513,14 +513,14 @@ animation-delay: -2s;
 @keyframes dot-4{
     0%{
         transform:rotate(0deg)
-            translate(-45vw)
-            rotate(0deg);
+        translate(-45vw)
+        rotate(0deg);
   
   }
     100%{
         transform:rotate(360deg)
-            translate(-45vw)
-            rotate(-360deg);
+        translate(-45vw)
+        rotate(-360deg);
   }
 }
 .dot-5{
@@ -532,14 +532,14 @@ animation-delay: -6s;
 @keyframes dot-5{
     0%{
         transform:rotate(0deg)
-            translate(-45vw)
-            rotate(0deg);
+        translate(-45vw)
+        rotate(0deg);
   
    }
    100%{
         transform:rotate(360deg)
-            translate(-45vw)
-            rotate(-360deg);
+        translate(-45vw)
+        rotate(-360deg);
    }
 }
 .dot-6{
@@ -551,14 +551,14 @@ animation-delay: -10s;
 @keyframes dot-6{
     0%{
         transform:rotate(0deg)
-            translate(-45vw)
-            rotate(0deg);
+        translate(-45vw)
+        rotate(0deg);
   
     }
     100%{
         transform:rotate(360deg)
-            translate(-45vw)
-            rotate(-360deg);
+        translate(-45vw)
+        rotate(-360deg);
     }
 }
 .pink-section{
