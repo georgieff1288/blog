@@ -47,7 +47,7 @@
                 <img src="@/assets/images/logos.png" class="d-block d-md-none img-fluid" alt="...">
             </div>
         </section>
-        <section class="container d-flex flex-column align-items-center my-5">
+        <section class="container d-flex flex-column align-items-center my-5" id="how-it-works">
             <p class="text-center x-large-text">How Onir Works</p>
             <p class="text-center medium-text" style="max-width:774px;">App works very smoothly with your requirements and its easy to install and register to you and your clients.</p>
         </section>
@@ -87,7 +87,7 @@
             <p class="text-center mb-4 medium-text">Nullam tincidunt, purus sit amet viverra auctor, quam neque dapibus dui,</p>
             <hr>
         </section>
-        <section class="container pt-5">
+        <section class="container pt-5" id="features">
             <div class="d-flex flex-column align-items-center mb-5">
                 <p class="text-center x-large-text">Few Awesome Features</p>
                 <p class="text-center medium-text" style="max-width:754px;">Improving your small business's growth through Onir app. It also help to improve your customer service and make more money quickly.</p>
@@ -208,7 +208,7 @@
                 </div>
             </div>
         </section>
-        <section class="container-fluid pink-section m-0 px-0 pt-5">
+        <section class="container-fluid pink-section m-0 px-0 pt-5" id="pricing">
             <div class="d-flex flex-column align-items-center">
                 <p class="text-center x-large-text" style="max-width: 605px;">Simple, Transparent Plans. Let Start with Onir.</p>
                 <p class="text-center medium-text">Choose  a plan that works for you.</p>
@@ -222,7 +222,7 @@
                 <div class="x-small-bold-text mx-1 discount text-center py-1 mt-1">10% Off</div>
             </div>
             <div class="row mb-5 mx-md-5 px-md-2">
-                <div class="col-4 d-none d-md-flex justify-content-center p-5">
+                <div class="col-12 col-md-4 d-flex justify-content-center p-2 p-md-5">
                     <div class="price-div side d-flex flex-column justify-content-center align-items-center">
                         <p class="medium-bold-text">Base</p>
                         <p class="small-text" style="line-height: 28px;">For the basics</p>
@@ -252,7 +252,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-4 d-none d-md-flex justify-content-center p-5">
+                <div class="col-12 col-md-4 d-flex justify-content-center p-2 p-md-5">
                     <div class="price-div side d-flex flex-column justify-content-center align-items-center">
                         <p class="medium-bold-text">Enterprise</p>
                         <p class="small-text" style="line-height: 28px;">For the professionals</p>
@@ -268,7 +268,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container px-1 px-md-0">
+            <div class="container px-1 px-md-0" id="about">
                 <p class="text-center d-none d-md-block x-large-text">Frequently Asked Questions</p>
                 <p class="text-center d-block d-md-none x-large-text">FAQs</p>
                 <div class="container px-0">

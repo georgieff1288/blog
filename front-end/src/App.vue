@@ -115,6 +115,14 @@ body{
     line-height: 12px;
     color: $first-dark-color;
 }
+.nav-link-item{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: $first-dark-color;
+}
 .blue-color{
     color: $blue-color;
 }
